@@ -4,8 +4,8 @@
     padding: 0;
 }
 body {
-    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
-    background: linear-gradient(-45deg, #000000, #323136, #0d2236, #020305);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   /* background: linear-gradient(-45deg, #000000, #323136, #0d2236, #020305);*/
 	background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     font-family: 'Exo', sans-serif;
@@ -40,7 +40,7 @@ body {
 }
 ul {
     float: right;
-    padding-right: 50px;
+    padding-right: 1%;
 }
 nav ul li {
     /*background-color: teal;*/
@@ -300,7 +300,7 @@ nav ul li a:hover{
     animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-    background-size: 50% 100px;
+    background-size: 50% 50px;
     opacity: 0.2;
 }
 .waveAnimation .waveBottom {
