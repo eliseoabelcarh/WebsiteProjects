@@ -189,9 +189,10 @@ nav ul li a:hover{
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: white;
+    color: white;
+    font-size: 3em;
 	text-align: center;
-	top: 65%;
+	top: 61%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
