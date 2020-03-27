@@ -14,7 +14,10 @@ body {
 
 
 
+.cuadrado{
+    background-color: lavenderblush;
 
+}
 
 
 #menu {
@@ -26,6 +29,12 @@ body {
     /*border-bottom: 2px solid black;*/
       
     
+}
+
+#space2{
+    background-color: lemonchiffon;
+    height: 100px;
+    width: 200px;
 }
 
 
