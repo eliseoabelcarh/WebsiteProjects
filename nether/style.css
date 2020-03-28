@@ -3,32 +3,37 @@
     margin: 0;
     padding: 0;
 }
+html {
+    height: 100%;
+}
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-   /* background: linear-gradient(-45deg, #000000, #323136, #0d2236, #020305);*/
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    
     font-family: 'Exo', sans-serif;
+    height: 100%;
+    margin-top: 0px;
+    
 }
 /* ---------------menu --------------------*/
 
 
 
-.cuadrado{
-    background-color: lavenderblush;
 
-}
 
 
 #menu {
-    width: 100%;
-    height: 80px;
-   /* background-color: white;*/
-    position: fixed;
-    z-index: 99999999;
+    /* background-color: white;*/
     /*border-bottom: 2px solid black;*/
       
-    
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    background-blend-mode: hard-light;
+    position: fixed;
+    margin-top: 10px;
+    padding: 15px;
+    opacity: 0.5;
+    z-index: 99999999;
+    border-bottom: 2px solid black;
 }
 
 #space2{
@@ -55,7 +60,7 @@ nav ul li {
     /*background-color: teal;*/
     float: left;
     list-style:none;
-    margin: 50px 0 0 0;
+    margin: 0;
     
 }
 nav ul li a{
@@ -124,6 +129,10 @@ nav ul li a:hover{
     /*background: rgba(9, 33, 61, 0.924);*/
     width: 100%;
     /*background-image:  url('images/blur_mesh.png');*/
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   /* background: linear-gradient(-45deg, #000000, #323136, #0d2236, #020305);*/
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,11 +166,7 @@ nav ul li a:hover{
     }
  }
 
-/*
-#el2dofondo:hover{
-    background: url("images/line_mesh.png") repeat center ;
-   opacity: 1;
-}*/
+
 
 #rock-3d{
     position: absolute;
@@ -245,20 +250,128 @@ nav ul li a:hover{
 		font-size: 3em;
 	}
 }
-#banner1{
+.white{
+    color: white;
+}
+#seccion2{
     height: 100%;
     width: 100%;
     background-color: white;
-   position: absolute;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-#space1{
+.space2{
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion3{
     height: 100%;
     width: 100%;
-    background-color: teal;
+    background-image: url(images/Hero-1b.jpg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+.space3{
+    height: 100%;
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#image3d{
+    padding: 20px;
+    animation-name: MOVE-BG3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    -webkit-animation-direction: alternate-reverse;
+}
+
+@keyframes MOVE-BG3 {
+    from {
+      transform: translateX(0);
+    }
+    to{
+        transform: translateX(4%);
+    }
+ }
+
+.titlesH1{
+    font-size: 2.6em;
+    font-weight: 700;
+}
+.titlesH3{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.titlesH4{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+#ellipseWithDescription{
+    margin-top: 20px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#moving-elipse{
+    
+    height: 100px;
+    width:100px;
+    background: url("images/Ellipse-1.webp") no-repeat center ;
+    animation-name: MOVE-BG2;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    -webkit-animation-direction: alternate-reverse;
+}
+
+
+@keyframes MOVE-BG2 {
+    from {
+      transform: translateX(0);
+    }
+    to{
+        transform: translateY(10%);
+    }
+ }
+
+
+
+.descripcionTitle{
+    font-size: 1em;
+    font-weight: 200;
+    color: rgb(122, 122, 122);
+    padding-right: 10%;
+    padding-left: 10px;
+}
+.descripcionTitle2{
+    font-size: 1em;
+    font-weight: 200;
+    color:white;
+    padding-right: 10%;
+    padding-left: 10px;
+}
+
+
 
 
 
@@ -462,5 +575,23 @@ nav ul li a:hover{
 
 
 
-/*- ------------------HOVERMOUSE 2DOFONDO ---------- */
+/*- ------------------footer ---------- */
 
+#footer{
+    height: 30%;
+    width: 100%;
+   
+}
+#footerElement1{
+    height: 50%;
+    width: 100%;
+    background-color: lightgreen;
+    
+}
+#footerElement2{
+    height: 50%;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    
+    
+}

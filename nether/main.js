@@ -184,6 +184,13 @@ var width, height, largeHeader, canvas, ctx, points, target, animateHeader = tru
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 
-
+    $('.js-anchor-link').click(function(e){
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if(target.length){
+          var scrollTo = target.offset().top;
+          $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
+      });
 
 
