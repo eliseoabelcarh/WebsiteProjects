@@ -339,6 +339,12 @@ nav ul li a:hover{
         left: 50%;
        
     }
+    #rock-3d{
+        width: 65%;
+    }
+    #text-3d{
+        width: 35%;
+    }
     section {
         overflow: hidden;
        display: inline-grid !important;
