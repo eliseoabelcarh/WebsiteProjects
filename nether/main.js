@@ -1,11 +1,27 @@
 
-   
+  window.addEventListener('scroll', function (e) {
+    var nav = document.getElementById('menu');
+    if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+            nav.classList.add('nav-colored');
+            nav.classList.remove('nav-transparent');
+        } else {
+            nav.classList.add('nav-transparent');
+            nav.classList.remove('nav-colored');
+        }
+});
+
+
+
+
+
 var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
     // Main
     initHeader();
     initAnimation();
     addListeners();
+
+    menuNow();
     
     
 
@@ -179,6 +195,10 @@ var width, height, largeHeader, canvas, ctx, points, target, animateHeader = tru
         };
     }
 
+
+
+
+    
     // Util
     function getDistance(p1, p2) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
@@ -194,21 +214,53 @@ var width, height, largeHeader, canvas, ctx, points, target, animateHeader = tru
       });
 
 
+var iconMenu = document.getElementById("iconMenu");
+iconMenu.addEventListener("click" , showMenu);
+
+function showMenu(){
+    var iconMenu = document.getElementById("iconMenu");
+    var containerMenuLinks = document.getElementById("containerMenuLinks");
+
+    if(iconMenu.className == "fa fa-chevron-up" ){
+        iconMenu.className = "fa fa-bars";
+        containerMenuLinks.style.display = "none";
+       
+
+    }else{
+        iconMenu.className = "fa fa-chevron-up";
+        containerMenuLinks.style.display = "block";
+        
+    }
+      
+    
+}
 
 
 
 
+   
+	
+	//Navigation
 
-
-
-
-window.addEventListener('scroll', function (e) {
-        var nav = document.getElementById('menu');
-        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-                nav.classList.add('nav-colored');
-                nav.classList.remove('nav-transparent');
-            } else {
-                nav.classList.add('nav-transparent');
-                nav.classList.remove('nav-colored');
-            }
-    });
+    
+    function menuNow () {
+		var body = undefined;
+		var menu = undefined;
+		var menuItems = undefined;
+		var init = function init() {
+			body = document.querySelector('body');
+			menu = document.querySelector('.menu-icon');
+			menuItems = document.querySelectorAll('.nav__list-item');
+			applyListeners();
+		};
+		var applyListeners = function applyListeners() {
+			menu.addEventListener('click', function () {
+				return toggleClass(body, 'nav-active');
+			});
+		};
+		var toggleClass = function toggleClass(element, stringClass) {
+			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+		};
+		init();
+    }
+    
