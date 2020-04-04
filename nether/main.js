@@ -194,7 +194,7 @@ var width, height, largeHeader, canvas, ctx, points, target, animateHeader = tru
     }
 
 
-   /* $('.js-anchor-link').click(function(e){
+     $('.js-anchor-link').click(function(e){
         e.preventDefault();
         var target = $($(this).attr('href'));
         if(target.length){
@@ -202,7 +202,7 @@ var width, height, largeHeader, canvas, ctx, points, target, animateHeader = tru
           $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
         }
       });
-*/
+
 
 
    

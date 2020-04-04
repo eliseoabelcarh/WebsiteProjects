@@ -6,9 +6,9 @@
 }
 html {
     height: 100%;
-    scroll-snap-type: mandatory;
+    /*scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;    
+    scroll-snap-type: y mandatory; */   
 }
 
 
@@ -30,10 +30,10 @@ body {
 /* ---------------menu --------------------*/
 
 
-
+/*
 section{
       scroll-snap-align: start;
-}
+}*/
 
 #iconMenu {
     font-size: 2.5em;
@@ -175,7 +175,7 @@ nav ul li a:hover{
     /*background-image:  url('images/blur_mesh.png');*/
    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
     background: linear-gradient(-45deg, #000000, #083c66, #1f2020, #083458);
-	background-size: 400% 400%;
+	background-size: 100% 100%;
     animation: gradient 15s ease infinite;
     display: flex;
     justify-content: center;
@@ -286,7 +286,7 @@ nav ul li a:hover{
 	font-weight: 200;
 }
 #img3d{
-    width: 100%; 
+    width: 80%; 
  }
 
 
