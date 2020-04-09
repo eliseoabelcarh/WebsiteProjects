@@ -369,6 +369,11 @@ nav ul li a:hover{
         margin-bottom: 10px !important;
     }
 
+    body.nav-active .nav:before, body.nav-active .nav:after{
+        width: 65% !important;
+    }
+
+
 }
 
 
@@ -905,7 +910,7 @@ nav ul li a:hover{
 	position: fixed;
 	visibility: hidden;
 	top: 100px;
-    left: 0px;
+    left: 4.5%;
 	width: 210px;
 	text-align: left;
 }
@@ -925,7 +930,7 @@ nav ul li a:hover{
 	color: #fff;
 	overflow: hidden; 
 	font-family: 'Poppins', sans-serif;
-	font-size: 22px;
+	font-size: 2em;
 	line-height: 1.2;
 	letter-spacing: 2px;
 	-webkit-transform: translate(30px, 0%);
@@ -1009,8 +1014,8 @@ body.nav-active .nav {
 	visibility: visible;
 }
 body.nav-active .nav:before, body.nav-active .nav:after {
-	width: 250px;
-	height: 310px;
+	width: 30%;
+	height: 90%;
 	border-radius: 15px;
 }
 body.nav-active .nav:after {
