@@ -261,3 +261,29 @@ function removerNavActives(){
         element.className = "nav__list-item";
     }
 }
+
+
+//-----------------------  ANIMACION DE IMAGENES APARECEN -------------
+
+function aparecerImagen(){
+
+    var html = document.getElementsByTagName("body")[0];
+    var elementosQueAparecen = document.getElementsByClassName("aparece");
+
+    document.addEventListener("wheel", function(){
+
+        var topVent = html.scrollTop;
+        for (let i = 0; i < elementosQueAparecen.length; i++) {
+            var topElemento =  elementosQueAparecen[i].offsetTop;
+            if(topVent > topElemento-500){
+                elementosQueAparecen[i].style.opacity = 1;
+                
+            }
+            
+        }
+
+    });
+
+}// fin de aparecerImagen
+
+aparecerImagen();

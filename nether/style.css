@@ -293,9 +293,14 @@ nav ul li a:hover{
 	font-weight: 200;
 }
 #img3d{
-    width: 80%; 
+    width: 99%; 
  }
 
+.aparece{
+    opacity: 0;
+    
+    transition: all 3s;
+}
 
 @media only screen and (max-width : 960px) {
 
