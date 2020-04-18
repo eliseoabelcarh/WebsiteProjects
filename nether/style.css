@@ -377,7 +377,11 @@ nav ul li a:hover{
     body.nav-active .nav:before, body.nav-active .nav:after{
         width: 65% !important;
     }
-
+    .aparece{
+        opacity: 1 !important;
+        
+        transition: all 3s;
+    }
 
 }
 
