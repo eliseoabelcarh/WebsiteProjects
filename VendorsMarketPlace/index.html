@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    
+   
+   
+    
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = "contenedorWeb">
+
+        <div id = "contenedorHeader">
+            <div id = "contenedorHeaderConSombra">
+                   <div id= "logo">
+                       <h1>= new </h1>
+                       <h1 class = "colorNaranja"> Tienda( )</h1>
+                       <h2 class = "colorNaranja">®</h2>
+                   </div>
+                   <div id= "loginDiv">
+                       <ul>
+                           <li>
+                                <div id= "loginLink">
+                                    Sign in
+                                </div>
+                           </li>
+                           <li>
+                               or
+                           </li>
+                           <li>
+                                <div id= "createAccountLink">
+                                    Create Account
+                                </div>
+                           </li>
+                       </ul>
+                       
+                      
+
+                   </div> 
+            </div>
+        </div>
+        <div id="contenedorCentral">
+
+            <div id = "contenedorIzquierdo">
+                    <div>
+                        <ul id="leftMenu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Mi Tienda</a></li>
+                            <li><a href=""></a></li>
+                            <li class="liveChat rotate"><a style="color:white" href="#">Live Chat</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+            </div>
+            <div id = "contenedorBody">
+
+                <div id = "moduloSaludo" class = "modulo">
+                    
+                    <div id ="divSaludo">
+
+                        <p class = "tituloH colorNaranja" >Welcome</p>
+                        <p class = "subtitulosH" >Thank you for joining us!</p>
+                        <p class = "parrafoH colorGris" >You currently do not have any sales</p>
+                    
+                    </div>
+
+
+                    <div id= "divNombreTienda">
+
+                                <div id= "nombTiendaContainer">
+                                    <div class = "storeNameHeader">
+                                        <i class='material-icons materialBigger'>storefront</i>
+                                    </div>
+                                    <div class = "storeNameHeader">
+                                        <h3 class= "subrayadoNaranja">NOMBRE DE TIENDA</h3> 
+                                    </div>
+
+                                </div>
+
+                                
+                                <div id= "socialDiv">
+
+
+
+                                    <div class="footer-social-icons">
+                                        <ul class="social-icons">
+                                            <li><a href="" class="social-icon"> <i class="fa fa-whatsapp"></i></a></li> 
+                                            <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
+                                          
+                                        </ul>
+                                    </div>
+
+
+
+
+
+
+         
+                                </div>
+                                
+
+                                <div class = "storeNameEditBtn">
+                                    <div class = "smallOrangeButton">EDITAR</div>
+                                </div>
+
+                    </div>
+
+                   
+                    
+                </div>
+                <div id = "separador1" class = "moduloBorderTop">
+                    
+        
+                
+                </div>
+               <div id = "productosContainer">
+
+         
+
+                    <table id="table_id" class="display">
+                        <thead>
+                            <tr>
+                                <th>
+                                   <!-- <div id= "tableHeaderContainer">
+
+                                       PRODUCTOS
+
+                                    </div>
+                                    -->
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr>
+                                <td><div  class = "modulo">
+
+                                    <div class = "gridProducto" >
+            
+                                        <div class="gridItem-a">
+            
+                                                <div id= "divPhotoProductGallery">
+                                                    <img class= "imgProdGrid" src="https://picsum.photos/150/150/?random">
+                                                    <div id= "photoProductButns">
+                                                        <div class = "smallOrangeButton">EDITAR GALERIA</div>
+                                                    </div>
+                                                </div>
+            
+                                        </div>
+                                        <div class="gridItem-b">
+                                                <div id = "divProductDetails">
+                                                    <p>Categoría</p>
+                                                    <h2>celular samsung modelo </h2>
+                                                    <p class = "parrafoH colorGris">SKU: 25235</p>
+                                                    <p class = "parrafoH colorGris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                    <p>Precio: $25.99</p>
+                                                </div>
+                                        </div>
+                                        <div class="gridItem-c">
+                                                <div id= "divSelfProductButns">
+                                                    <div class = "smallGrayButton">EDITAR </div>
+                                                    <div class = "smallGrayButton">ELIMINAR </div>
+                                                </div>
+                                        </div>
+                
+                                    </div>
+                                    
+                                    
+                                </div></td>
+                                
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td><div  class = "modulo">
+
+                                    <div class = "gridProducto" >
+            
+                                        <div class="gridItem-a">
+            
+                                                <div id= "divPhotoProductGallery">
+                                                    <img class= "imgProdGrid" src="https://picsum.photos/150/150/?random">
+                                                    <div id= "photoProductButns">
+                                                        <div class = "smallOrangeButton">EDITAR GALERIA</div>
+                                                    </div>
+                                                </div>
+            
+                                        </div>
+                                        <div class="gridItem-b">
+                                                <div id = "divProductDetails">
+                                                    <p>Categoría</p>
+                                                    <h2>aNombre de Producto</h2>
+                                                    <p class = "parrafoH colorGris">SKU: 25SD87</p>
+                                                    <p class = "parrafoH colorGris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                    <p>Precio: $25.99</p>
+                                                </div>
+                                        </div>
+                                        <div class="gridItem-c">
+                                                <div id= "divSelfProductButns">
+                                                    <div class = "smallGrayButton">EDITAR </div>
+                                                    <div class = "smallGrayButton">ELIMINAR </div>
+                                                </div>
+                                        </div>
+                
+                                    </div>
+                                    
+                                    
+                                </div></td>
+                            
+                            </tr>
+
+                            
+
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    
+               </div>
+               
+
+
+            </div>
+            
+
+        </div>
+      
+       
+        <div id = "contenedorFooter">
+
+           
+
+        </div>
+
+
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</body>
+</html>
